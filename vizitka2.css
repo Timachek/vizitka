@@ -18,10 +18,10 @@ body {
     background-color: #333;
     padding: 10px 20px;
     z-index: 1000;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: center;
+    justify-content: center;  /* Центрируем меню */
     align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Стиль для навигационных ссылок */
@@ -30,7 +30,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center;  /* Центрируем пункты меню */
     gap: 20px;
 }
 
@@ -66,6 +66,16 @@ body {
     height: 4px;
     background-color: #fff;
     transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Скрытие меню по умолчанию на мобильных */
+.navbar-links {
+    display: none;
+}
+
+/* Активация бургер-меню для мобильных */
+.navbar.active .navbar-links {
+    display: block;
 }
 
 /* Отступ для фиксации секций под меню */
@@ -210,6 +220,9 @@ section {
 
     .navbar.active ul {
         display: flex; /* Показать меню при активации */
+        flex-direction: column; /* Вертикальное меню */
+        justify-content: center; /* Центрируем меню */
+        align-items: center; /* Центрируем пункты меню */
     }
 
     .burger-menu {
@@ -225,6 +238,10 @@ section {
     .navbar ul li a {
         padding: 10px;
         font-size: 20px;
+    }
+
+    .contact .form-group {
+        max-width: 100%;
     }
 }
 
@@ -325,11 +342,4 @@ section {
 
 .contact button:hover {
     background-color: #0056b3;
-}
-
-/* Медиазапрос для мобильных устройств */
-@media (max-width: 768px) {
-    .contact .form-group {
-        max-width: 100%;
-    }
 }
