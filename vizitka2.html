@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-визитка</title>
+    <link rel="stylesheet" href="vizitka2.css">
+</head>
+<body>
+
+    <!-- Навигационное меню -->
+    <nav class="navbar">
+        <div class="burger-menu" id="burgerMenu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </div>
+        <ul class="navbar-links" id="navbarLinks">
+            <li><a href="#intro">Главная</a></li>
+            <li><a href="#achievements">Достижения</a></li>
+            <li><a href="#skills">Умения</a></li>
+            <li><a href="#contact">Обратная связь</a></li>
+        </ul>
+    </nav>
+
+    <!-- Секция 1: Вступление -->
+    <section id="intro" class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <h1>Ззздарова! Тебя приветствует персональный тренер Тимачок</h1>
+                <h2>Я готов одновременно привести тебя в форму твоей мечты и стать твоим лучшим другом в зале.</h2>
+                <p>Почему тебе стоит обратиться именно ко мне? За моей спиной огромный багаж знаний по всему, что касается тренировок и питания, за занятие возьму недорого и в случае отсутствия результата в течение года все затраченные средства будут возвращены.</p>
+                <a href="#contact" class="cta-btn">Связаться со мной</a>
+                <div class="image">
+                    <img src="Дрищ.jpg" alt="Моя фотка">
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/yourusername" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="https://t.me/yourusername" target="_blank">
+                        <img src="https://www.svgrepo.com/show/452115/telegram.svg" alt="Telegram" class="social-icon">
+                    </a>
+                    <a href="https://vk.com/yourusername" target="_blank">
+                        <img src="https://www.svgrepo.com/show/343532/vk-communication-internet-network-chat-interaction.svg" alt="ВКонтакте" class="social-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция 2: Мои достижения -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2>Мои достижения</h2>
+            <div class="achievements-list">
+                <div class="achievement-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=58c61d134357ed73f07a655284d748ad3a447416-10071482-images-thumbs&n=13" alt="Достижение 1">
+                    <h3>Сертификация тренера</h3>
+                    <p>Получил сертификат фитнес-тренера, успешно завершив курс по спортивному питанию и тренировочным методикам.</p>
+                </div>
+                <div class="achievement-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=9dfbcd440541136b62fd0b569f63b98213e50107-10836825-images-thumbs&n=13" alt="Достижение 2">
+                    <h3>Победа в соревнованиях</h3>
+                    <p>Занял 1-е место на чемпионате по бодибилдингу (официально, был одним участником).</p>
+                </div>
+                <div class="achievement-card">
+                    <img src="https://avatars.mds.yandex.net/i?id=ce9f53ae0c26525b3cb9deb97d54ec6437cd607f27408fa3-12420879-images-thumbs&n=13" alt="Достижение 3">
+                    <h3>Клиентская база</h3>
+                    <p>Множество довольных клиентов, которые достигли своих целей, получив индивидуальные программы тренировок и питания.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция 3: Умения -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Умения, которыми я владею</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="Плавание.jpg" alt="Плавание">
+                    <h3>Плавание</h3>
+                    <p>Когда-то я плавал на профессиональном уровне. Смог добиться вполне неплохих результатов.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="Дизайн.jpg" alt="Веб-дизайн">
+                    <h3>Веб-дизайн</h3>
+                    <p>Создание современных и адаптивных сайтов, применение принципов UI/UX-дизайна.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="Кач.jpg" alt="Качалка">
+                    <h3>Силовые тренировки</h3>
+                    <p>Обширный опыт в силовых тренировках и составлении персональных программ.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="Вождение.jpg" alt="Вождение">
+                    <h3>Вождение</h3>
+                    <p>Профессиональные навыки вождения автомобиля. Катаюсь на электрокаре.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция 4: Обратная связь -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Обратная связь</h2>
+            <form action="https://getform.io/f/your-form-id" method="POST">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш email</label>
+                    <input type="email" id="email" name="email" required placeholder="Введите ваш email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Ваше сообщение</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Напишите ваше сообщение"></textarea>
+                </div>
+                <button type="submit" class="cta-btn">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
